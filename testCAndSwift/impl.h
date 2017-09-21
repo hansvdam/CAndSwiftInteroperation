@@ -19,6 +19,10 @@ typedef struct {
     char     width;
 } VTermScreenCell;
 
+typedef struct {
+    int (*sb_pushline)(int cols, const VTermScreenCell *cells, void *user);
+    int (*sb_popline)(int cols, VTermScreenCell *cells, void *user);
+} VTermScreenCallbacks;
 
 VTermScreenCell bla(void);
 

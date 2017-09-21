@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B12106601F73F14700299915 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B121065F1F73F14700299915 /* main.swift */; };
 		B12106691F73F1A700299915 /* impl.c in Sources */ = {isa = PBXBuildFile; fileRef = B12106671F73F1A700299915 /* impl.c */; };
+		B12418D41F7414F4003EEA14 /* TKTerminalScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = B12418D21F7414F4003EEA14 /* TKTerminalScreen.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,8 @@
 		B12106661F73F1A700299915 /* testCAndSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "testCAndSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		B12106671F73F1A700299915 /* impl.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = impl.c; sourceTree = "<group>"; };
 		B12106681F73F1A700299915 /* impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = impl.h; sourceTree = "<group>"; };
+		B12418D21F7414F4003EEA14 /* TKTerminalScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKTerminalScreen.m; sourceTree = "<group>"; };
+		B12418D31F7414F4003EEA14 /* TKTerminalScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKTerminalScreen.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,8 @@
 		B121065E1F73F14700299915 /* testCAndSwift */ = {
 			isa = PBXGroup;
 			children = (
+				B12418D31F7414F4003EEA14 /* TKTerminalScreen.h */,
+				B12418D21F7414F4003EEA14 /* TKTerminalScreen.m */,
 				B121065F1F73F14700299915 /* main.swift */,
 				B12106671F73F1A700299915 /* impl.c */,
 				B12106681F73F1A700299915 /* impl.h */,
@@ -128,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B12418D41F7414F4003EEA14 /* TKTerminalScreen.m in Sources */,
 				B12106601F73F14700299915 /* main.swift in Sources */,
 				B12106691F73F1A700299915 /* impl.c in Sources */,
 			);
@@ -245,6 +251,7 @@
 		B12106641F73F14700299915 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NX2GMGJ6S2;
@@ -259,6 +266,7 @@
 		B12106651F73F14700299915 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NX2GMGJ6S2;
