@@ -20,13 +20,12 @@ typedef struct {
 } StructDefinedInPlainCHeader;
 
 typedef struct {
-    int (*sb_pushline)(int cols, const StructDefinedInPlainCHeader *cells, void *user);
-    int (*sb_popline)(int cols, StructDefinedInPlainCHeader *cells, void *user);
+    int (*callback)(int cols, StructDefinedInPlainCHeader *cells, void *user);
 } MethodsToBeCalledBackFromPlainC;
 
 void  vterm_screen_set_callbacks(const MethodsToBeCalledBackFromPlainC *callbacks, void *user);
 
-void receiveAndRetransmitData(StructDefinedInPlainCHeader *structArray, int  arrayLength);
+void receiveDataInPlainC(StructDefinedInPlainCHeader *structArray, int arrayLength);
 
 StructDefinedInPlainCHeader bla(void);
 

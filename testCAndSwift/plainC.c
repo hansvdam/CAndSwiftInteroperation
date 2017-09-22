@@ -29,8 +29,8 @@ void vterm_screen_set_callbacks(const MethodsToBeCalledBackFromPlainC *callbacks
     localCallbackTarget = user;
 }
 
-void receiveAndRetransmitData(StructDefinedInPlainCHeader *structArray, int  arrayLength) {
-
+void receiveDataInPlainC(StructDefinedInPlainCHeader *structArray, int arrayLength) {
+    (localCallbacks->callback)(arrayLength, structArray, localCallbackTarget);
 }
 
 
