@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B12106601F73F14700299915 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B121065F1F73F14700299915 /* main.swift */; };
-		B12106691F73F1A700299915 /* impl.c in Sources */ = {isa = PBXBuildFile; fileRef = B12106671F73F1A700299915 /* impl.c */; };
-		B12418D41F7414F4003EEA14 /* TKTerminalScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = B12418D21F7414F4003EEA14 /* TKTerminalScreen.m */; };
+		B12106691F73F1A700299915 /* plainC.c in Sources */ = {isa = PBXBuildFile; fileRef = B12106671F73F1A700299915 /* plainC.c */; };
+		B12418D41F7414F4003EEA14 /* MyObjectiveCObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B12418D21F7414F4003EEA14 /* MyObjectiveCObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,10 +28,10 @@
 		B121065C1F73F14700299915 /* testCAndSwift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = testCAndSwift; sourceTree = BUILT_PRODUCTS_DIR; };
 		B121065F1F73F14700299915 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		B12106661F73F1A700299915 /* testCAndSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "testCAndSwift-Bridging-Header.h"; sourceTree = "<group>"; };
-		B12106671F73F1A700299915 /* impl.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = impl.c; sourceTree = "<group>"; };
-		B12106681F73F1A700299915 /* impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = impl.h; sourceTree = "<group>"; };
-		B12418D21F7414F4003EEA14 /* TKTerminalScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKTerminalScreen.m; sourceTree = "<group>"; };
-		B12418D31F7414F4003EEA14 /* TKTerminalScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKTerminalScreen.h; sourceTree = "<group>"; };
+		B12106671F73F1A700299915 /* plainC.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = plainC.c; sourceTree = "<group>"; };
+		B12106681F73F1A700299915 /* plainC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = plainC.h; sourceTree = "<group>"; };
+		B12418D21F7414F4003EEA14 /* MyObjectiveCObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyObjectiveCObject.m; sourceTree = "<group>"; };
+		B12418D31F7414F4003EEA14 /* MyObjectiveCObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyObjectiveCObject.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,11 +64,11 @@
 		B121065E1F73F14700299915 /* testCAndSwift */ = {
 			isa = PBXGroup;
 			children = (
-				B12418D31F7414F4003EEA14 /* TKTerminalScreen.h */,
-				B12418D21F7414F4003EEA14 /* TKTerminalScreen.m */,
+				B12418D31F7414F4003EEA14 /* MyObjectiveCObject.h */,
+				B12418D21F7414F4003EEA14 /* MyObjectiveCObject.m */,
 				B121065F1F73F14700299915 /* main.swift */,
-				B12106671F73F1A700299915 /* impl.c */,
-				B12106681F73F1A700299915 /* impl.h */,
+				B12106671F73F1A700299915 /* plainC.c */,
+				B12106681F73F1A700299915 /* plainC.h */,
 				B12106661F73F1A700299915 /* testCAndSwift-Bridging-Header.h */,
 			);
 			path = testCAndSwift;
@@ -133,9 +133,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B12418D41F7414F4003EEA14 /* TKTerminalScreen.m in Sources */,
+				B12418D41F7414F4003EEA14 /* MyObjectiveCObject.m in Sources */,
 				B12106601F73F14700299915 /* main.swift in Sources */,
-				B12106691F73F1A700299915 /* impl.c in Sources */,
+				B12106691F73F1A700299915 /* plainC.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
