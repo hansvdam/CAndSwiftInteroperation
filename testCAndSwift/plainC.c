@@ -21,10 +21,16 @@ void edit() {
 MethodsToBeCalledBackFromPlainC *localCallbacks;
 void *localCallbackTarget;
 
+
+
 void vterm_screen_set_callbacks(const MethodsToBeCalledBackFromPlainC *callbacks, void *user)
 {
     localCallbacks = callbacks;
     localCallbackTarget = user;
+}
+
+void receiveAndRetransmitData(StructDefinedInPlainCHeader *structArray, int  arrayLength) {
+
 }
 
 

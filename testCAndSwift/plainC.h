@@ -26,6 +26,8 @@ typedef struct {
 
 void  vterm_screen_set_callbacks(const MethodsToBeCalledBackFromPlainC *callbacks, void *user);
 
+void receiveAndRetransmitData(StructDefinedInPlainCHeader *structArray, int  arrayLength);
+
 StructDefinedInPlainCHeader bla(void);
 
 void edit(void);

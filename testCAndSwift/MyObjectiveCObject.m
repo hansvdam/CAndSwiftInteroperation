@@ -9,7 +9,7 @@ static int term_sb_pushline(int cols, const StructDefinedInPlainCHeader *cells, 
 }
 
 static int term_sb_popline(int cols, StructDefinedInPlainCHeader *cells, void *user_data) {
-	return [obj(user_data) popScrollbackLine:(StructDefinedInPlainCHeader*)cells cols:cols];
+	return [obj(user_data) passDataTtOoPlainC:(StructDefinedInPlainCHeader *) cells arrayLenght:cols];
 }
 
 static MethodsToBeCalledBackFromPlainC screen_callbacks = {
@@ -28,8 +28,14 @@ static MethodsToBeCalledBackFromPlainC screen_callbacks = {
 	return 1;
 }
 
-- (int) popScrollbackLine:(StructDefinedInPlainCHeader*)cells cols:(int)cols {
-	return 1;
+- (int)passDataTtOoPlainC:(StructDefinedInPlainCHeader *)structArray arrayLenght:(int)length {
+    printf("inside passDataTtOoPlainC:\n");
+    for (int i=0; i<length; i++) {
+        printf("  struct: {SomeArrayField:[%d,%d], someCharField:%d}\n", structArray[i].someArrayField[0], structArray[i].someArrayField[1], structArray[0].someCharField);
+    }
+    printf("\n");
+    receiveAndRetransmitData(structArray, length);
+    return 1;
 }
 
 @end
