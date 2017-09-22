@@ -10,6 +10,7 @@
 		B12106601F73F14700299915 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B121065F1F73F14700299915 /* main.swift */; };
 		B12106691F73F1A700299915 /* plainC.c in Sources */ = {isa = PBXBuildFile; fileRef = B12106671F73F1A700299915 /* plainC.c */; };
 		B12418D41F7414F4003EEA14 /* MyObjectiveCObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B12418D21F7414F4003EEA14 /* MyObjectiveCObject.m */; };
+		B1EDFEE31F75359F00C7E24C /* MySwiftObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EDFEE21F75359F00C7E24C /* MySwiftObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +33,7 @@
 		B12106681F73F1A700299915 /* plainC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = plainC.h; sourceTree = "<group>"; };
 		B12418D21F7414F4003EEA14 /* MyObjectiveCObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyObjectiveCObject.m; sourceTree = "<group>"; };
 		B12418D31F7414F4003EEA14 /* MyObjectiveCObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyObjectiveCObject.h; sourceTree = "<group>"; };
+		B1EDFEE21F75359F00C7E24C /* MySwiftObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySwiftObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				B12106671F73F1A700299915 /* plainC.c */,
 				B12106681F73F1A700299915 /* plainC.h */,
 				B12106661F73F1A700299915 /* testCAndSwift-Bridging-Header.h */,
+				B1EDFEE21F75359F00C7E24C /* MySwiftObject.swift */,
 			);
 			path = testCAndSwift;
 			sourceTree = "<group>";
@@ -133,6 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1EDFEE31F75359F00C7E24C /* MySwiftObject.swift in Sources */,
 				B12418D41F7414F4003EEA14 /* MyObjectiveCObject.m in Sources */,
 				B12106601F73F14700299915 /* main.swift in Sources */,
 				B12106691F73F1A700299915 /* plainC.c in Sources */,

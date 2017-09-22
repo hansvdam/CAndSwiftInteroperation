@@ -8,7 +8,7 @@
 
 #ifndef impl_h
 #define impl_h
-
+#include <stdbool.h>
 #include <stdio.h>
 #include <stdint.h>
 
@@ -20,12 +20,16 @@ typedef struct {
 } StructDefinedInPlainCHeader;
 
 typedef struct {
-    int (*callback)(int cols, StructDefinedInPlainCHeader *cells, void *user);
+    int (*callback)(int cols, StructDefinedInPlainCHeader *cells, bool modify, void *user);
 } MethodsToBeCalledBackFromPlainC;
 
 void  vterm_screen_set_callbacks(const MethodsToBeCalledBackFromPlainC *callbacks, void *user);
 
 void receiveDataInPlainC(StructDefinedInPlainCHeader *structArray, int arrayLength);
+
+void triggerCallback(bool modify);
+
+void setStoredArrayElement(int indexInInObjectArray, int indexFieldArrayField, uint32_t value);
 
 StructDefinedInPlainCHeader bla(void);
 

@@ -22,6 +22,9 @@ MethodsToBeCalledBackFromPlainC *localCallbacks;
 void *localCallbackTarget;
 
 
+int localArrayLength;
+
+StructDefinedInPlainCHeader *localStructArray;
 
 void vterm_screen_set_callbacks(const MethodsToBeCalledBackFromPlainC *callbacks, void *user)
 {
@@ -30,7 +33,17 @@ void vterm_screen_set_callbacks(const MethodsToBeCalledBackFromPlainC *callbacks
 }
 
 void receiveDataInPlainC(StructDefinedInPlainCHeader *structArray, int arrayLength) {
-    (localCallbacks->callback)(arrayLength, structArray, localCallbackTarget);
+    localArrayLength = arrayLength;
+    localStructArray = structArray;
 }
+
+void setStoredArrayElement(int indexInInObjectArray, int indexFieldArrayField, uint32_t value) {
+    localStructArray[indexInInObjectArray].someArrayField[indexFieldArrayField] = value;
+}
+
+void triggerCallback(bool modify) {
+    (localCallbacks->callback)(localArrayLength, localStructArray, modify,localCallbackTarget);
+}
+
 
 
